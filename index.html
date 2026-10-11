@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
 <title>L'autre maison d'Ajaccio</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@400;500&display=swap">
 <style>
@@ -257,6 +258,11 @@ td:first-child{font-family:var(--mono);font-size:.82rem;white-space:nowrap;font-
 .mock .three p{font-size:.8rem;color:var(--soft)}
 .mock .three b{display:block;color:var(--ink)}
 /* apparition en fondu au défilement, sans script : sans prise en charge, tout reste visible */
+@media (max-width:820px){.flush .pic.stack{aspect-ratio:auto;min-height:0}.flush .pic.stack .in{position:static}.flush .pic.stack .in img,.flush .pic.stack .in img:last-child{flex:none;width:100%;height:auto}}
+@media (max-width:640px){.mood .scroll{overflow:visible}.mood .strip{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:repeat(2,minmax(0,1fr))}.mood .strip img:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:3/2}}
+@media (max-width:640px){.gridonly{padding-inline:12px}.profile{gap:12px;letter-spacing:0}.profile .ph{gap:14px;align-items:center}.profile .ph img{width:72px;height:72px}.profile .ph div{gap:3px;padding-block:8px}.profile .ph h3{font-size:14px;font-weight:600}.profile .ph p{font-size:12px;line-height:1.35}.profile .ph .st{font-size:10.5px}.profile .tabs{padding-bottom:8px}.profile .tabs svg{width:20px;height:20px}.gridonly .feed{gap:2px}}
+@media (max-width:700px){.post{display:flex;flex-direction:column;gap:6px}.post .n{padding-top:0}.post .ig,.post .ig.reel{margin-inline:calc(var(--pad) * -1);width:auto;max-width:none;display:flex;flex-direction:column;border-inline:0;font-size:14px}.post .ig .panel{display:contents}.post .ig .who{order:0;padding:10px 12px;border-bottom:0}.post .ig .media,.post .ig.reel .media{order:1;width:100%;max-width:none;margin:0}.post .ig .foot{order:2;border-top:0;padding:10px 12px 0}.post .ig .body{order:3;padding:8px 12px 14px;flex:none}.post .ig .date{order:4}}
+@media (max-width:640px){.board11{grid-template-columns:repeat(6,minmax(0,1fr))}.board11 img,.board11 img:nth-child(7){grid-column:span 2}.board11 img:nth-child(10){grid-column:2/span 2}.board11 img:nth-child(11){grid-column:4/span 2}}
 @media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
 .sheet>section,.sheet>header{animation:fondu linear both;animation-timeline:view();animation-range:entry 0% entry 42%}
 @keyframes fondu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -273,6 +279,7 @@ td:first-child{font-family:var(--mono);font-size:.82rem;white-space:nowrap;font-
 </style>
 </head>
 <body>
+
 <div class="sheet">
 <div class="bar"><span class="brand">Pozzo di Borgo · Proposition Instagram</span><nav aria-label="Chapitres"><a href="#existant">01 L'existant</a><a href="#proposition">02 Proposition</a><a href="#calendrier">03 Calendrier</a></nav></div>
 <header class="hero"><div class="txt"><p class="label">Hôtel Pozzo di Borgo · Ajaccio, Corse</p><div class="head"><h1><i>L'autre maison</i> d'Ajaccio</h1><p class="sub">Proposition créative pour une présence digitale.</p></div><p class="by">Danaé Brucelle · Test pour Les Éditions Corses · Octobre 2026</p></div><div class="pic"><img src="img/68df6b9b.jpg" alt="La façade de l'hôtel, rue Bonaparte" decoding="async"></div></header>
